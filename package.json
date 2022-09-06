@@ -1,15 +1,24 @@
 {
-  "name": "tracker",
+  "name": "pak-tracker",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "frontend",
+    "monitor",
+    "tracker"
+  ],
+  "author": "patrick",
   "license": "ISC",
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "rollup": "^2.78.1",
     "rollup-plugin-dts": "^4.2.2",

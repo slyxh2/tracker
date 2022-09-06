@@ -52,4 +52,16 @@ You should add the **target-key** like this, the tracker also send the key to ba
 
 ### public methods
 
-``` setUserId
+
+```js
+const tr = new Tracker({
+    requestUrl:"xxxxxx"
+})
+tr.setUserId('xx');
+tr.setExtra({name:'patrick'});
+tr.sendTracker({name:'patrick'});
+```
+
+1. setUsetId - to set the unique ID to monitor every unique vistor
+2. setExtra - set the extra information to send to backend within every report
+3. sendTracker - send the information to backend
